@@ -11,7 +11,7 @@ iOS and macOS implementation of the flutter_whisper_kit plugin, providing on-dev
                        DESC
   s.homepage         = 'https://github.com/r0227n/flutter_whisper_kit/tree/main/flutter_whisper_kit_apple'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Ryo24' }
+  s.author           = 'Ryo24'
 
   s.source           = { :path => '.' }
   s.source_files = 'flutter_whisper_kit_apple/Sources/flutter_whisper_kit_apple/**/*'
@@ -23,10 +23,10 @@ iOS and macOS implementation of the flutter_whisper_kit plugin, providing on-dev
   # s.resource_bundles = {'flutter_whisperkit_apple_privacy' => ['flutter_whisper_kit_apple/Sources/flutter_whisper_kit_apple/PrivacyInfo.xcprivacy']}
 
   s.dependency 'Flutter'
-  s.platform = :ios, '16.0'
-
   s.dependency 'FlutterMacOS'
-  s.platform = :osx, '13.0'
+
+  s.ios.deployment_target = '16.0'
+  s.osx.deployment_target = '13.0'
 
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.swift_version = '5.0'
